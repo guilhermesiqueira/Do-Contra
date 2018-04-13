@@ -66,8 +66,8 @@ Os usuários cadastrados podem criar suas próprias resenhas/análises/críticas
     https://www.youtube.com/watch?v=znCrFpo6d3Y
 
 
-    **Autor:** Guilherme Siqueira Brandão
+    Autor: Guilherme Siqueira Brandão
 
-    **Disciplina:** Orientação a Objetos - 2º Semestre de 2017
+    Disciplina: Orientação a Objetos - 2º Semestre de 2017
 
-    **Instituição:** Universidade de Brasília - UnB
+    Instituição: Universidade de Brasília - UnB
