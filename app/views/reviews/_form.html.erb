@@ -1,0 +1,48 @@
+<%= form_with model: review, local: true, html: { multipart: true } do |form| %>
+  <% if review.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(review.errors.count, "error") %> prohibited this review from being saved:</h2>
+
+      <ul>
+      <% review.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Artista %>
+    <%= form.text_field :Artista, id: :review_Artista %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Titulo %>
+    <%= form.text_field :Titulo, id: :review_Titulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Genero %>
+    <%= form.text_field :Genero, id: :review_Genero %>
+  </div>
+
+
+    <div class="field">
+      <%= form.label :Resenha %>
+      <%= form.text_area :Resenha, size: "60x12", id: :review_Resenha %>
+    </div>
+
+  <div class="field">
+    <%= form.label :Nota %>
+    <%= form.number_field :Nota, in: 0.0..10.0, step: 0.5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image, id: :review_Image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

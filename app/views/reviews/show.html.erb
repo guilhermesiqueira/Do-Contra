@@ -1,0 +1,34 @@
+<%= image_tag @review.image.url(:medium) %>
+<p>
+  <li>Artista:</li>
+  <p><t></t><p><%= @review.Artista %></p>
+</p>
+
+<t>
+  <li>Titulo:</li>
+  <p><t></t><p><%= @review.Titulo %></p>
+</t>
+
+<t>
+  <li>Genero:</li>
+  <p><t></t><p><%= @review.Genero %> </p>
+</t>
+
+<p>
+  <strong>Resenha:</strong>
+  <ol><%= @review.Resenha %></ol>
+</p>
+
+<p>
+  <strong>Nota:</strong>
+  <li><%= @review.Nota %></li>
+</p>
+
+<cou> <%= link_to 'Voltar', reviews_path %> | </cou>
+
+<div id="comentarios">
+  <h1><%= @review.comentarios.count %> Comentarios </h1>
+  <%= render @review.comentarios %>
+  <h2>Fazer um comentario</h2>
+  <%= render "comentarios/form" %>
+</div>

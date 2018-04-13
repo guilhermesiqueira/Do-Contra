@@ -1,0 +1,17 @@
+<%= form_for([@review, @review.comentarios.build]) do |form| %>
+
+<div class="field">
+  <%= form.label :nome %><br>
+  <%= form.text_field :nome%>
+</div>
+
+  <div class="field">
+    <%= form.label :comentario%><br>
+    <%= form.text_area :body %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+  <% end %>
